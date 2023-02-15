@@ -41,9 +41,6 @@ document.getElementById("new-post").addEventListener("submit", function(e) {
         .then(post => {
             postsArray.unshift(post)
             renderPosts()
-            /**
-             * Challenge: clear the form out!
-             */
             document.getElementById("new-post").reset()
         })
 })
